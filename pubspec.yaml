@@ -42,6 +42,7 @@ dependencies:
   flutter_widget_from_html_core: ^0.8.5+3
   phone_number: ^1.0.0
   country_code_picker: ^3.0.0
+  csslib: 0.17.0
   flutter_typeahead: ^4.3.7
   fwfh_selectable_text: ^0.8.3+1
   circular_countdown_timer: ^0.2.3
@@ -50,7 +51,6 @@ dependencies:
   flutter_inappwebview: ^5.7.2+3
   google_api_headers: ^1.5.0+1
   audioplayers: ^0.20.1
-  flutter_facebook_auth: ^5.0.6
   google_sign_in: ^5.4.2
   dotted_border: ^2.0.0+3
   share_plus: ^4.5.3

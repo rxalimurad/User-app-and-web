@@ -10,8 +10,6 @@
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3766CF26D3222828D3DFFBB2 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84C0D6817CB2C8A28AB4670 /* Pods_Runner.framework */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
-		3CC71E082A9F860700CF58FA /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC71E072A9F860700CF58FA /* FBAEMKit.xcframework */; };
-		3CC71E092A9F860700CF58FA /* FBAEMKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC71E072A9F860700CF58FA /* FBAEMKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		86E732E5260B03840071477F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86E732E4260B03840071477F /* GoogleService-Info.plist */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -35,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3CC71E092A9F860700CF58FA /* FBAEMKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC71E082A9F860700CF58FA /* FBAEMKit.xcframework in Frameworks */,
 				3766CF26D3222828D3DFFBB2 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

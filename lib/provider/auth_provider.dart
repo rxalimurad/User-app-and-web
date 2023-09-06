@@ -4,7 +4,6 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:flutter_restaurant/data/model/response/base/api_response.dart';
 import 'package:flutter_restaurant/data/model/response/base/error_response.dart';
 import 'package:flutter_restaurant/data/model/response/response_model.dart';
@@ -405,7 +404,6 @@ class AuthProvider with ChangeNotifier {
       final GoogleSignIn googleSignIn = GoogleSignIn();
       googleSignIn.disconnect();
     }else if(user.loginMedium!.toLowerCase() == 'facebook'){
-      await FacebookAuth.instance.logOut();
     }
 
   }

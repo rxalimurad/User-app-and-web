@@ -6,7 +6,6 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_restaurant/helper/notification_helper.dart';
@@ -83,12 +82,7 @@ Future<void> main() async {
       measurementId: "G-X1LHXV0DK1",
     ));
 
-    await FacebookAuth.instance.webAndDesktopInitialize(
-      appId: "YOUR_APP_ID",
-      cookie: true,
-      xfbml: true,
-      version: "v13.0",
-    );
+
 
   }
   await di.init();

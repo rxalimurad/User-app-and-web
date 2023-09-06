@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:flutter_restaurant/data/model/response/social_login_model.dart';
 import 'package:flutter_restaurant/helper/responsive_helper.dart';
 import 'package:flutter_restaurant/localization/language_constrants.dart';
@@ -105,45 +104,6 @@ class _SocialLoginWidgetState extends State<SocialLoginWidget> {
                ],
              ),
 
-
-            if(socialStatus.isFacebook!)
-              InkWell(
-              onTap: () async{
-                LoginResult result = await FacebookAuth.instance.login();
-
-                if (result.status == LoginStatus.success) {
-                 Map userData = await FacebookAuth.instance.getUserData();
-
-
-                 authProvider.socialLogin(
-                   SocialLoginModel(
-                     email: userData['email'],
-                     token: result.accessToken!.token,
-                     uniqueId: result.accessToken!.userId,
-                     medium: 'facebook',
-                   ), route,
-                 );
-                }
-              },
-              child: Container(
-                height: ResponsiveHelper.isDesktop(context)?50 :ResponsiveHelper.isTab(context)? 40:40,
-                width: ResponsiveHelper.isDesktop(context)? 130 :ResponsiveHelper.isTab(context)? 110: 40,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.1),
-                  borderRadius: const BorderRadius.all(Radius.circular(Dimensions.radiusDefault)),
-                ),
-                child:   Image.asset(
-                  Images.facebook,
-                  height: ResponsiveHelper.isDesktop(context)
-                      ? 30 : ResponsiveHelper.isTab(context)
-                      ? 25 : 20,
-                  width: ResponsiveHelper.isDesktop(context)
-                      ? 30 :ResponsiveHelper.isTab(context)
-                      ? 25 : 20,
-                ),
-              ),
-            ),
           ]),
           const SizedBox(height: Dimensions.paddingSizeExtraSmall,),
         ]);
