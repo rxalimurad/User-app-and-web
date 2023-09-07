@@ -50,7 +50,6 @@ class _SocialLoginWidgetState extends State<SocialLoginWidget> {
     return Consumer<AuthProvider>(
       builder: (context, authProvider, _) {
         return Column(children: [
-
           Center(child: Text('${getTranslated('sign_in_with', context)}', style: poppinsRegular.copyWith(
               color: Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.6),
               fontSize: Dimensions.fontSizeSmall))),

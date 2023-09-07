@@ -732,7 +732,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
       permission = await Geolocator.requestPermission();
     }
     if(permission == LocationPermission.denied) {
-      showCustomSnackBar(getTranslated('you_have_to_allow', Get.context!));
+     // showCustomSnackBar(getTranslated('you_have_to_allow', Get.context!));
     }else if(permission == LocationPermission.deniedForever) {
       showDialog(context: Get.context!, barrierDismissible: false, builder: (context) => const PermissionDialog());
     }else {
