@@ -6,7 +6,7 @@ class AppConstants {
   static const String appName = 'MEG FOOD';
   static const String appVersion = '10.0';
   static const AppMode appMode = AppMode.release;
-  static const String baseUrl =  'https://admin.megfood.com.ng/';
+  static const String baseUrl =  'https://admin.megfood.com.ng';
   static const String categoryUri = '/api/v1/categories';
   static const String bannerUri = '/api/v1/banners';
   static const String latestProductUri = '/api/v1/products/latest';
